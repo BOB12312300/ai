@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Auto-Train Agent Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="agent-container" id="app-container">
+        <header>
+            <h1>Global AI Memory Workspace</h1>
+            <span id="agent-status" class="status-idle">Idle</span>
+        </header>
+
+        <!-- Upgraded Control Panel Menu Grid -->
+        <div class="control-panel">
+            <button id="menu-clear-btn" class="menu-btn danger">🗑️ Clear Storage</button>
+            <button id="menu-import-btn" class="menu-btn action">📥 Bulk Import</button>
+            <button id="menu-export-btn" class="menu-btn export">📤 Export Knowledge</button>
+            <button id="menu-autotrain-btn" class="menu-btn training">⚡ Auto-Train Topic</button>
+        </div>
+
+        <div id="chat-window" class="chat-window">
+            <div class="message agent-message">System Online. To train me on anything in the universe: type the topic name in the textbox below and click the green <b>"Auto-Train Topic"</b> button!</div>
+        </div>
+
+        <div class="input-area">
+            <textarea id="user-input" placeholder="Type a question, or type a topic name to Auto-Train..."></textarea>
+            <button id="send-btn">Execute</button>
+        </div>
+    </div>
+
+    <script src="ai.js"></script>
+</body>
+</html>
